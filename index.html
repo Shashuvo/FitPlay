@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FitZone - Your Fitness Journey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Poppins', 'sans-serif'],
+                        'logo': ['Righteous', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+<body class="font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-logo text-blue-600 hover:text-blue-800 transition-colors">
+                        FitZone
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                        Home
+                    </a>
+                    <a href="workouts.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                        Workouts
+                    </a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                        Gallery
+                    </a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                        Contact
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle (CSS-only) -->
+                <div class="md:hidden">
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+                    <label for="menu-toggle" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 cursor-pointer block">
+                        <!-- Hamburger Icon -->
+                        <svg class="h-6 w-6 peer-checked:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!-- Close Icon -->
+                        <svg class="h-6 w-6 hidden peer-checked:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu (CSS-only toggle) -->
+            <div class="hidden peer-checked:block md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                        Home
+                    </a>
+                    <a href="workouts.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                        Workouts
+                    </a>
+                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                        Gallery
+                    </a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area (with padding to account for fixed nav) -->
+    <main class="pt-16">
+        
+    </main>
 </body>
 </html>
