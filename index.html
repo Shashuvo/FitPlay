@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FitZone - Your Fitness Journey</title>
+    <title>FitPlay - Your Fitness Journey</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,23 +30,23 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-logo text-blue-600 hover:text-blue-800 transition-colors">
-                        FitZone
+                    <a href="index.html" class="text-4xl font-logo font-bold text-green-600 hover:text-green-800 transition-colors">
+                        FitPlay
                     </a>
                 </div>
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-lg font-bold transition-colors">
                         Home
                     </a>
-                    <a href="workouts.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                    <a href="workouts.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-lg font-bold transition-colors">
                         Workouts
                     </a>
-                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                    <a href="gallery.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-lg font-bold transition-colors">
                         Gallery
                     </a>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-bold transition-colors">
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-lg font-bold transition-colors">
                         Contact
                     </a>
                 </div>
@@ -54,7 +54,7 @@
                 <!-- Mobile Menu Toggle (CSS-only) -->
                 <div class="md:hidden">
                     <input type="checkbox" id="menu-toggle" class="peer hidden">
-                    <label for="menu-toggle" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 cursor-pointer block">
+                    <label for="menu-toggle" class="text-gray-700 hover:text-green-600 focus:outline-none focus:text-green-600 cursor-pointer block">
                         <!-- Hamburger Icon -->
                         <svg class="h-6 w-6 peer-checked:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -70,16 +70,16 @@
             <!-- Mobile Menu (CSS-only toggle) -->
             <div class="hidden peer-checked:block md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-                    <a href="index.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                         Home
                     </a>
-                    <a href="workouts.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                    <a href="workouts.html" class="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                         Workouts
                     </a>
-                    <a href="gallery.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                    <a href="gallery.html" class="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                         Gallery
                     </a>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
+                    <a href="contact.html" class="text-gray-700 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium transition-colors">
                         Contact
                     </a>
                 </div>
@@ -89,7 +89,25 @@
 
     <!-- Main Content Area (with padding to account for fixed nav) -->
     <main class="pt-16">
-        
+        <!-- Hero Section with Parallax Effect -->
+        <section class="relative h-screen flex items-center justify-center bg-cover bg-center bg-fixed" 
+        style="background-image: url('https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+            <!-- Overlay for better text readability -->
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            
+            <!-- Content -->
+            <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+                    Fitness & Football Training
+                </h1>
+                <p class="text-lg sm:text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
+                    Transform your body, elevate your game. Your journey to peak performance starts here.
+                </p>
+                <a href="workouts.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-colors duration-300 shadow-lg">
+                    Get Started
+                </a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
